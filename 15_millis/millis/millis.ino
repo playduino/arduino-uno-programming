@@ -12,14 +12,13 @@ void loop() {
 
   unsigned long currentMillis = millis();
 
-  if(currentMillis - storedTimeStampRed  >= 300){
+  if (currentMillis - storedTimeStampRed >= 300) {
     storedTimeStampRed = currentMillis;
     digitalWrite(2, !digitalRead(2));
   }
 
-  if(currentMillis - storedTimeStampGreen  >= 400){
+  if (currentMillis - storedTimeStampGreen >= 400) {
     storedTimeStampGreen = currentMillis;
     digitalWrite(3, !digitalRead(3));
   }
-
 }
